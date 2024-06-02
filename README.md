@@ -1,11 +1,12 @@
-# Simulador de Autômato
+# 💻 Simulador de Autômato
 
-Um simples simulador de DFA e NFA escrito em Python. Este projeto foi feito como uma tarefa de Teoria da Computação na UENP.
+Um simples simulador de Autômatos Finitos escrito em Python. Este projeto foi feito como uma tarefa da matéria de Teoria da Computação na UENP.
 
-Para simular um DFA ou um NFA, você precisará de três arquivos:
+Para simular um Autômato Finito Determinístico ou um Não Determinístico, você precisará de três arquivos:
+
 - `automato.aut` Este é um arquivo JSON que contém todas as informações sobre o autômato: o estado inicial, o(s) estado(s) final(is) e as transições.
 
-    Ele deve seguir este padrão, caso contrário o programa falhará:
+    O arquivo json deve seguir o modelo padrão a seguir:
     
     ```json
     {
@@ -31,9 +32,9 @@ Para simular um DFA ou um NFA, você precisará de três arquivos:
     }
     ```
 
-- `entradas.in` Este é um arquivo CSV que contém palavras que passam pelo autômato. Separado por ponto e vírgula está a própria palavra e o resultado esperado para essa palavra (se deve ou não ser uma palavra válida de acordo com o autômato).
+- `entradas.in` Este é um arquivo CSV que contém palavras que passam pelo autômato. Separado por ponto e vírgula está a própria palavra e o resultado esperado para essa palavra.
 
-    Ele deve seguir este padrão, caso contrário o programa falhará:
+    Ele deve seguir este padrão:
 
     ```csv
     aab;1
@@ -51,13 +52,13 @@ Para simular um DFA ou um NFA, você precisará de três arquivos:
     aaaa;0;0;0.003910
     ```
 
-## Agradecimentos
+## Executando
 
 Para executar este programa, você precisará ter o [Python](https://www.python.org/) versão 3.12.3 ou superior instalado.
+E executar o seguinte código em seu terminal:
 
-## Instalação
-
-Clone este repositório
-
-```bash
-git clone https://github.com/seu_usuario/seu_repositorio
+(pode ser que o programa encontre erros em ler os arquivos).
+```csv
+$ python simulador.py Exemplos/ex1.json Exemplos/ex1_input.csv Exemplos/ex1_output.out.csv
+```
+Sendo necessário implementar o nome dos 3 arquivos para rodar.
