@@ -59,6 +59,6 @@ E executar o seguinte código em seu terminal:
 
 (pode ser que o programa encontre erros em ler os arquivos).
 ```csv
-$ python simulador.py Exemplos/ex1.json Exemplos/ex1_input.csv Exemplos/ex1_output.out.csv
+$ python automaton.py Exemplos/ex1.json Exemplos/ex1_input.csv Exemplos/ex1_output.out.csv
 ```
 Sendo necessário implementar o nome dos 3 arquivos para rodar.
