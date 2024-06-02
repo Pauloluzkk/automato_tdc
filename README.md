@@ -4,7 +4,7 @@ Um simples simulador de Autômatos Finitos escrito em Python. Este projeto foi f
 
 Para simular um Autômato Finito Determinístico ou um Não Determinístico, você precisará de três arquivos:
 
-- `automato.aut` Este é um arquivo JSON que contém todas as informações sobre o autômato: o estado inicial, o(s) estado(s) final(is) e as transições.
+- Este é um arquivo JSON que contém todas as informações sobre o autômato: o estado inicial, o(s) estado(s) final(is) e as transições.
 
     O arquivo json deve seguir o modelo padrão a seguir:
     
@@ -32,7 +32,7 @@ Para simular um Autômato Finito Determinístico ou um Não Determinístico, voc
     }
     ```
 
-- `entradas.in` Este é um arquivo CSV que contém palavras que passam pelo autômato. Separado por ponto e vírgula está a própria palavra e o resultado esperado para essa palavra.
+- Este é um arquivo CSV que contém palavras que passam pelo autômato. Separado por ponto e vírgula está a própria palavra e o resultado esperado para essa palavra.
 
     Ele deve seguir este padrão:
 
@@ -42,7 +42,7 @@ Para simular um Autômato Finito Determinístico ou um Não Determinístico, voc
     aaaa;0
     ```
 
-- `saida.out` Este também é um arquivo CSV. É muito semelhante ao arquivo de entrada, mas além disso, contém o resultado obtido do autômato e o tempo que levou para processar a palavra (em segundos).
+- Este também é um arquivo CSV. É muito semelhante ao arquivo de entrada, mas além disso, contém o resultado obtido do autômato e o tempo que levou para processar a palavra (em segundos).
 
     Este arquivo será gerado pelo programa:
 
